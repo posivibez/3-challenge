@@ -106,7 +106,9 @@ body {
       padding: .8rem 1.5rem;
       font-size: 1rem;
       border-radius: 1rem;
-      max-width: 65%; }
+      max-width: 65%;
+      display: flex;
+      align-items: center; }
       .app__phone--messages-item-left {
         background-color: #EDE5F4;
         color: #9241c8; }
@@ -141,7 +143,7 @@ body {
       .app__phone--messages-option-text {
         margin-left: 1rem;
         font-size: .9rem;
-        color: rgba(255, 255, 255, 0.6); }
+        color: rgba(255, 255, 255, 0.8); }
       .app__phone--messages-option-price {
         margin-left: auto;
         font-size: 1.3rem;
