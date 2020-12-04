@@ -1,0 +1,297 @@
+.app {
+
+    //OVERALL GRID CONTAINER FOR FEATURE
+    &__container {
+        // margin: 0 25rem;
+        width: 50%;
+        max-height: 600px;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-gap: 10rem;
+        justify-items: center;
+
+        @media only screen and (max-width: $bp-mobile) {
+            width: 80%;
+            grid-template-columns: auto;
+            grid-gap: 5rem;
+            
+    
+        }
+    }
+
+    //PHONE ON RIGHT SIDE
+    &__phone {
+
+        background-color: $color-light-grayish-violet;
+        border-radius: 30px;
+        border: 1rem solid white;
+        height: 600px;
+        overflow: hidden;
+        box-shadow: 0 2rem 5rem rgba(black, 0.2);
+
+        display: grid;
+        grid-template-rows: min-content auto auto;
+
+        @media only screen and (max-width: $bp-mobile) {
+            width: 250px;
+            height: 500px;
+            margin-top: 3rem;
+    
+        }
+
+        //TOP BAR OF MESSAGE APP
+        &--header{
+            background-image: linear-gradient(to right, $gradient-light-violet, $gradient-light-magenta);
+            color: white;
+            position: relative;
+
+            &-whitespace {
+                background-color: white;
+                width: 60%;
+                height: 5rem;
+                margin: 0 auto;
+                border-radius: 15px;
+                position: absolute;
+                top: -40%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &-box {
+                margin: 0 2rem;
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+            & i {
+                font-size: 1rem;
+            }
+
+            &-icon-right {
+                margin-left: auto;
+            }
+
+            & img {
+                width: 3rem;
+                border-radius: 50%;
+                border: 2px solid white;
+                margin-left: 1rem;
+            }
+
+            &-text {
+                margin-left: 1rem;
+                line-height: 1.5;
+                
+
+
+                &-name {
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                }
+
+                &-status {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $color-header-msg-text;
+                }
+            }
+
+        }
+
+        //MESSAGES BEING SENT
+        &--messages{
+            // display: flex;
+            // flex-direction: column;
+            margin: 2rem 1rem;
+            
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-gap: 1rem;
+
+            &-item{
+                // border-radius: 5px; 
+                padding: .8rem 1.5rem;
+                font-size: 1rem;
+                border-radius: 1rem;
+                max-width: 65%;
+                
+                
+                
+
+                &-left{
+                    background-color: $color-left-msg-bg;
+                    color: $color-left-msg-txt;
+
+                    
+                    
+
+                }
+
+                &-right{
+                    background-color: $color-right-msg-bg;
+                    color: $color-right-msg-txt;
+                    justify-self: end;
+
+                    box-shadow: 0 2rem 5rem rgba(black, 0.1);
+                }
+
+            }
+
+
+
+            &-imgs {
+                max-width: 65%;
+                background-color: transparent;
+                justify-self: end;
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-column-gap: 1rem;
+
+                & img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            //OPTIONS AT BOTTOM OF MESSAGE
+            &-option {
+                max-width: 75%;
+                background-image: linear-gradient(to left, $gradient-light-violet, $gradient-light-magenta);
+                padding: .8rem 1.5rem;
+                font-size: 1.2rem;
+                border-radius: 1rem;
+                display: flex;
+                align-items: center;
+
+                &-circle {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    border: 1px solid $color-very-light-magenta;
+
+                }
+
+                &-text {
+                    margin-left: 1rem;
+                    font-size: .9rem;
+                    color: rgba(white, 0.6);
+                }
+
+                &-price {
+                    margin-left: auto;
+                    font-size: 1.3rem;
+                    color:white;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        //FOOTER INPUT IN MESSAGE APP
+        &--footer {
+            display: flex;
+            align-items: center;
+            width: 93%;
+            background-color: white;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+            // padding: 1rem;
+            border-radius: 50px;
+
+            & p {
+                margin-left: 2rem;
+                font-size: 1.1rem;
+                color: $color-grayish-blue;
+            }
+
+            & i {
+                margin-left: auto;
+                margin-right: 1rem;
+                font-size: 2rem;
+                
+                color:black;
+                
+            }
+
+
+        }
+    }
+
+
+    //HEADER AND TEXT ON RIGHT SIDE
+    &__text {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media only screen and (max-width: $bp-mobile) {
+            
+            text-align: center;
+    
+        }
+    
+
+        &--heading {
+            color: $color-very-dark-violet;
+            margin-bottom: 2.5rem;
+            font-size: 3.5rem;
+            font-weight: 500;
+
+        }
+
+        &--details {
+            color: $color-dark-grayish-violet;
+            line-height: 1.8;
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.blob1, 
+.blob2 {
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    width: 50%;
+    @media only screen and (max-width: $bp-mobile) {
+        height: 60%;
+        width: 50%;
+
+    }
+}
+
+.blob1 {
+    top: 0;
+    left: -20%;
+    background-image: linear-gradient($gradient-light-magenta, $gradient-light-violet);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    @media only screen and (max-width: $bp-mobile) {
+        left: 0;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 0%;
+
+    }
+
+}
+
+.blob2 {
+    bottom: 0;
+    right: -20%;
+    background-color: $color-blob2-bg;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+    @media only screen and (max-width: $bp-mobile) {
+        bottom: -20%;
+        right: 0;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 100%;
+
+    }
+}

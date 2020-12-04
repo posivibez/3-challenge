@@ -1,0 +1,78 @@
+// COLOR VARIABLES
+$color-pale-violet: hsl(276, 100%, 81%); // (sub-heading at the top of the app UI)
+$color-left-msg-txt:hsl(276, 55%, 52%); // (chat on the left)
+$color-right-msg-txt:hsl(271, 15%, 43%); // (chat on the right)
+$color-grayish-blue:hsl(206, 6%, 79%); // (placeholder text)
+$color-very-dark-violet:hsl(271, 36%, 24%); // (main heading) (submit button bg)
+$color-dark-grayish-violet:hsl(270, 7%, 64%); // (paragraph)
+$color-left-msg-bg: #EDE5F4;
+$color-right-msg-bg: #fff;
+$color-header-msg-text: #DF78FF;
+
+$color-blob2-bg: #F9F4FA;
+
+//GRADIENT COLORS
+$gradient-light-magenta: hsl(293, 100%, 63%);
+$gradient-light-violet: hsl(264, 100%, 61%);
+
+//SECONDARY COLORS
+$color-white-bg: #FAFAFA;
+$color-light-grayish-violet: hsl(270, 20%, 96%); // (app background)
+$color-very-light-magenta:hsl(289, 100%, 72%); // (radio button outline)
+
+// FONT VARIABLES
+$font-primary: 'Kumbh Sans', sans-serif;
+
+//RESPONSIVE VARIABLES
+$bp-desktop: 90em; //1440px
+$bp-mobile: 25em; //375px
+
+//FONT AWESOME ICONS
+$fa-font-path: "/images/webfonts";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //     font-size: 50%;
+    // }
+
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 50%;
+
+    }
+
+}
+
+body {
+    background-color: $color-white-bg;
+    font-size: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    color: $color-dark-grayish-violet;
+}
+
+.container {
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-mobile) {
+
+        overflow: visible;
+    }
+    
+}
