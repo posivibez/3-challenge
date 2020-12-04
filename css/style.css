@@ -176,13 +176,13 @@ body {
       text-align: center; } }
   .app__text--heading {
     color: #3e2753;
-    margin-bottom: 2.5rem;
-    font-size: 5rem;
+    margin-bottom: 2.7rem;
+    font-size: 3rem;
     font-weight: 500; }
   .app__text--details {
     color: #a39daa;
     line-height: 1.8;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .blob1,
 .blob2 {
