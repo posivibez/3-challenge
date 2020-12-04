@@ -3,7 +3,7 @@
     //OVERALL GRID CONTAINER FOR FEATURE
     &__container {
         // margin: 0 25rem;
-        width: 50%;
+        width: 60%;
         max-height: 600px;
         z-index: 2;
         display: grid;
@@ -237,8 +237,8 @@
 
         &--heading {
             color: $color-very-dark-violet;
-            margin-bottom: 2.7rem;
-            font-size: 3rem;
+            margin-bottom: 2.5rem;
+            font-size: 5rem;
             font-weight: 500;
 
         }
@@ -246,7 +246,7 @@
         &--details {
             color: $color-dark-grayish-violet;
             line-height: 1.8;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 

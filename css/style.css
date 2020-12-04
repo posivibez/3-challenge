@@ -31,7 +31,7 @@ body {
       overflow: visible; } }
 
 .app__container {
-  width: 50%;
+  width: 60%;
   max-height: 600px;
   z-index: 2;
   display: grid;
@@ -176,13 +176,13 @@ body {
       text-align: center; } }
   .app__text--heading {
     color: #3e2753;
-    margin-bottom: 2.7rem;
-    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 5rem;
     font-weight: 500; }
   .app__text--details {
     color: #a39daa;
     line-height: 1.8;
-    font-size: 1.5rem; }
+    font-size: 2rem; }
 
 .blob1,
 .blob2 {
